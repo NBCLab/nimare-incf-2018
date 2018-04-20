@@ -1,0 +1,148 @@
+180420-00:23:51,17 interface INFO:
+	 stdout 2018-04-20T00:23:51.017390:Log directory is: stats
+180420-00:23:51,62 interface INFO:
+	 stdout 2018-04-20T00:23:51.062283:Setting up:
+180420-00:23:53,800 interface INFO:
+	 stdout 2018-04-20T00:23:53.800276:ntptsing=21.000000 
+180420-00:23:53,800 interface INFO:
+	 stdout 2018-04-20T00:23:53.800276:
+180420-00:23:53,800 interface INFO:
+	 stdout 2018-04-20T00:23:53.800276:evs_group=1.000000 
+180420-00:23:53,800 interface INFO:
+	 stdout 2018-04-20T00:23:53.800276:
+180420-00:23:53,801 interface INFO:
+	 stdout 2018-04-20T00:23:53.801110:No f contrasts
+180420-00:23:53,899 interface INFO:
+	 stdout 2018-04-20T00:23:53.899565:
+180420-00:23:53,899 interface INFO:
+	 stdout 2018-04-20T00:23:53.899565:WARNING: The passed in varcope file, /scratch/tsalo006/incf-nimare-abstract/nimare-incf-2018/mfx_glm/varcope.nii.gz, contains voxels inside the mask with zero (or negative) values. These voxels will be excluded from the analysis.
+180420-00:23:53,913 interface INFO:
+	 stdout 2018-04-20T00:23:53.913852:nevs=1
+180420-00:23:53,914 interface INFO:
+	 stdout 2018-04-20T00:23:53.913852:ntpts=21
+180420-00:23:53,914 interface INFO:
+	 stdout 2018-04-20T00:23:53.913852:ngs=1
+180420-00:23:53,914 interface INFO:
+	 stdout 2018-04-20T00:23:53.913852:nvoxels=168053
+180420-00:23:53,982 interface INFO:
+	 stdout 2018-04-20T00:23:53.982341:Running:
+180420-00:23:53,982 interface INFO:
+	 stdout 2018-04-20T00:23:53.982697:nmaskvoxels=168053
+180420-00:25:08,750 interface INFO:
+	 stdout 2018-04-20T00:25:08.750622: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100
+180420-00:25:08,764 interface INFO:
+	 stdout 2018-04-20T00:25:08.764036:nmaskvoxels=168053
+180420-00:25:08,764 interface INFO:
+	 stdout 2018-04-20T00:25:08.764036:Saving results
+180420-00:25:16,932 interface INFO:
+	 stdout 2018-04-20T00:25:16.932771:
+180420-00:25:16,933 interface INFO:
+	 stdout 2018-04-20T00:25:16.932771:Log directory was: stats
+180420-00:25:19,141 interface INFO:
+	 stdout 2018-04-20T00:25:19.141756:DLH 0.0294092
+180420-00:25:19,142 interface INFO:
+	 stdout 2018-04-20T00:25:19.141756:VOLUME 168053
+180420-00:25:19,142 interface INFO:
+	 stdout 2018-04-20T00:25:19.141756:RESELS 161.555
+180420-00:25:19,686 interface INFO:
+	 stdout 2018-04-20T00:25:19.686201:Cluster Index	Voxels	P	-log10(P)	MAX	MAX X (mm)	MAX Y (mm)	MAX Z (mm)	COG X (mm)	COG Y (mm)	COG Z (mm)	COPE-MAX	COPE-MAX X (mm)	COPE-MAX Y (mm)	COPE-MAX Z (mm)	COPE-MEAN
+180420-00:25:19,686 interface INFO:
+	 stdout 2018-04-20T00:25:19.686201:4	7611	4.04e-19	18.4	3.31	54	-38	38	29.1	-7.24	3.38	289	56	10	-2	95.6
+180420-00:25:19,686 interface INFO:
+	 stdout 2018-04-20T00:25:19.686201:3	1882	4.17e-07	6.38	3.26	-38	-70	-30	-10.4	-66.2	-26.4	130	-32	-72	-28	71.6
+180420-00:25:19,686 interface INFO:
+	 stdout 2018-04-20T00:25:19.686201:2	1426	8.4e-06	5.08	3.12	6	-18	42	3.76	-7.79	35.7	215	2	8	38	92.6
+180420-00:25:19,686 interface INFO:
+	 stdout 2018-04-20T00:25:19.686201:1	644	0.00389	2.41	3.03	-32	4	12	-35.5	2.3	-1.71	197	-40	0	-14	93.6
+180420-00:25:20,233 interface INFO:
+	 stdout 2018-04-20T00:25:20.232974:Cluster Index	Voxels	P	-log10(P)	MAX	MAX X (mm)	MAX Y (mm)	MAX Z (mm)	COG X (mm)	COG Y (mm)	COG Z (mm)	COPE-MAX	COPE-MAX X (mm)	COPE-MAX Y (mm)	COPE-MAX Z (mm)	COPE-MEAN
+Cleaning up...
+Now running iteration 1500
+Now running iteration 5500
+Now running iteration 2500
+Now running iteration 0
+Now running iteration 3000
+Now running iteration 8000
+Now running iteration 500
+Now running iteration 3500
+Now running iteration 2000
+Now running iteration 4000
+Now running iteration 9000
+Now running iteration 6000
+Now running iteration 8500
+Now running iteration 6500
+Now running iteration 5000
+Now running iteration 1000
+Now running iteration 4500
+Now running iteration 7000
+Now running iteration 9500
+Now running iteration 7500
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@n003>
+Subject: Job 621037: <incf> Done
+
+Job <incf> was submitted from host <v003> by user <tsalo006> in cluster <panther>.
+Job was executed on host(s) <12*n003>, in queue <PQ_nbc>, as user <tsalo006> in cluster <panther>.
+</home/tsalo006> was used as the home directory.
+</scratch/tsalo006/incf-nimare-abstract/nimare-incf-2018> was used as the working directory.
+Started at Thu Apr 19 21:48:51 2018
+Results reported at Fri Apr 20 01:47:02 2018
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#---Number of cores
+#BSUB -n 12
+#BSUB -R "span[ptile=12]"
+
+#---Job's name in LSF system
+#BSUB -J incf
+
+#---Error file
+#BSUB -eo incf_err
+
+#---Output file
+#BSUB -oo incf_out
+
+#---LSF Queue name
+#BSUB -q PQ_nbc
+
+##########################################################
+# Set up environmental variables.
+##########################################################
+export NPROCS=`echo $LSB_HOSTS | wc -w`
+export OMP_NUM_THREADS=$NPROCS
+
+. $MODULESHOME/../global/profile.modules
+source /scratch/tsalo006/incf-nimare-abstract/bash_environment
+module load fsl
+
+##########################################################
+##########################################################
+
+python meta_analyses.py
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :  76197.73 sec.
+    Max Memory :     40829 MB
+    Max Swap   :    195492 MB
+
+    Max Processes  :        16
+    Max Threads    :        20
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <incf_err> for stderr output of this job.
+

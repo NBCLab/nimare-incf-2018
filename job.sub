@@ -1,0 +1,31 @@
+#!/bin/bash
+#---Number of cores
+#BSUB -n 12
+#BSUB -R "span[ptile=12]"
+
+#---Job's name in LSF system
+#BSUB -J incf
+
+#---Error file
+#BSUB -eo incf_err
+
+#---Output file
+#BSUB -oo incf_out
+
+#---LSF Queue name
+#BSUB -q PQ_nbc
+
+##########################################################
+# Set up environmental variables.
+##########################################################
+export NPROCS=`echo $LSB_HOSTS | wc -w`
+export OMP_NUM_THREADS=$NPROCS
+
+. $MODULESHOME/../global/profile.modules
+source /scratch/tsalo006/incf-nimare-abstract/bash_environment
+module load fsl
+
+##########################################################
+##########################################################
+
+python meta_analyses.py
