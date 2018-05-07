@@ -179,12 +179,11 @@ se_data = apply_mask(se_imgs, mask_img)
 sample_sizes = np.array(ns)
 
 # FFX GLM
-result6 = ffx_glm(con_data, se_data, sample_sizes, mask_img, equal_var=True)
+result6 = ffx_glm(con_data, se_data, sample_sizes, mask_img)
 result6.save_results(output_dir='results/', prefix='ffx_glm')
 
 # MFX GLM
-result0 = mfx_glm(con_data, se_data, sample_sizes, mask_img,
-                  work_dir='mfx_glm/')
+result0 = mfx_glm(con_data, se_data, sample_sizes, mask_img)
 result0.save_results(output_dir='results/', prefix='mfx_glm')
 
 # Get contrast maps
