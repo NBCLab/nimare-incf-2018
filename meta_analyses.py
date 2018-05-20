@@ -1,3 +1,7 @@
+"""
+Run image- and coordinate-based meta-analyses on 21 pain studies from
+Neurovault.
+"""
 import json
 import numpy as np
 
@@ -73,30 +77,30 @@ def get_files(ddict, types):
 #
 #
 # MKDA Chi2 analysis with FDR
-mkda_chi2_fdr = nimare.meta.cbma.MKDAChi2(dset, ids=dset.ids, ids2=dset.ids,
-                                          kernel__r=10)
-mkda_chi2_fdr.fit(corr='FDR')
-mkda_chi2_fdr.results.save_results(output_dir='results/', prefix='mkda_chi2_fdr')
+mkda_chi2_fdr = nimare.meta.cbma.MKDAChi2(dset, kernel__r=10)
+mkda_chi2_fdr.fit(ids=dset.ids, ids2=dset.ids, corr='FDR')
+mkda_chi2_fdr.results.save_results(output_dir='results/',
+                                   prefix='mkda_chi2_fdr')
 
 # ALE
-ale = nimare.meta.cbma.ALE(dset, ids=dset.ids)
-ale.fit(n_iters=10000, n_cores=12)
+ale = nimare.meta.cbma.ALE(dset)
+ale.fit(ids=dset.ids, n_iters=10000, n_cores=12)
 ale.results.save_results(output_dir='results/', prefix='ale')
 
 # SCALE
 ijk = np.loadtxt('neurosynth_mni_2mm_ijk.txt')
-scale = nimare.meta.cbma.SCALE(dset, ids=dset.ids, ijk=ijk)
-scale.fit(n_iters=10000, n_cores=12)
+scale = nimare.meta.cbma.SCALE(dset, ijk=ijk)
+scale.fit(ids=dset.ids, n_iters=10000, n_cores=12)
 scale.results.save_results(output_dir='results/', prefix='scale')
 
 # MKDA Density analysis
-mkda_density = nimare.meta.cbma.MKDADensity(dset, ids=dset.ids, kernel__r=10)
-mkda_density.fit(n_iters=10000, n_cores=12)
+mkda_density = nimare.meta.cbma.MKDADensity(dset, kernel__r=10)
+mkda_density.fit(ids=dset.ids, n_iters=10000, n_cores=12)
 mkda_density.results.save_results(output_dir='results/', prefix='mkda_density')
 
 # KDA
-kda = nimare.meta.cbma.KDA(dset, ids=dset.ids, kernel__r=10)
-kda.fit(n_iters=10000, n_cores=12)
+kda = nimare.meta.cbma.KDA(dset, kernel__r=10)
+kda.fit(ids=dset.ids, n_iters=10000, n_cores=12)
 kda.results.save_results(output_dir='results/', prefix='kda')
 
 #
@@ -203,8 +207,8 @@ result8 = rfx_glm(con_data, mask_img, null='empirical', n_iters=10000,
 result8.save_results(output_dir='results/', prefix='contrast_perm')
 
 # MKDA Chi2 analysis with FWE
-mkda_chi2_fwe = nimare.meta.cbma.MKDAChi2(dset, ids=dset.ids, ids2=dset.ids,
-                                          kernel__r=10)
-mkda_chi2_fwe.fit(corr='FWE', n_iters=10000, n_cores=12)
-mkda_chi2_fwe.results.save_results(output_dir='results/', prefix='mkda_chi2_fwe')
-
+mkda_chi2_fwe = nimare.meta.cbma.MKDAChi2(dset, kernel__r=10)
+mkda_chi2_fwe.fit(ids=dset.ids, ids2=dset.ids, corr='FWE', n_iters=10000,
+                  n_cores=12)
+mkda_chi2_fwe.results.save_results(output_dir='results/',
+                                   prefix='mkda_chi2_fwe')
